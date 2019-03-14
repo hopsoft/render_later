@@ -22,10 +22,6 @@
 
 Render sections of the page asynchronously after initial page load.
 
-Inspired by: https://github.com/renderedtext/render_async
-
-This libary uses [Stimulus](https://stimulusjs.org) to avoid injecting multiple JavaScript tags into the body.
-
 # Quick Start
 
 ## Gemfile
@@ -53,6 +49,11 @@ gem "render_later"
 1. Browser renders the page
 1. [XHR](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) is used to fetch `render_later` sections asynchronously
 1. The DOM is updated with the asyncrhonously loaded HTML
+
+## Similar Tools
+
+- https://github.com/renderedtext/render_async
+- https://github.com/jarthod/render-later
 
 ## JavaScript Development
 
