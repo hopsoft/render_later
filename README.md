@@ -22,23 +22,23 @@
 
 ## Improve user perceived performance of your Rails app
 
-Render sections of the page asynchronously after initial page load.
+Render slower sections of web pages asynchronously after initial load.
 
 ## Quick Start
 
-1. `Gemfile`
+1. __Gemfile__
 
 ```ruby
 gem "render_later"
 ```
 
-2. `app/assets/javascripts/application.js`
+2. __app/assets/javascripts/application.js__
 
 ```javascript
 //= require render_later
 ```
 
-3. `app/views/any_erb_template.html.erb`
+3. __app/views/any_erb_template.html.erb__
 
 ```erb
 <%= render_later "/some/slow/url" %>
