@@ -4,11 +4,13 @@
 
 - [RenderLater](#renderlater)
   - [Improve user perceived performance of your Rails app](#improve-user-perceived-performance-of-your-rails-app)
-- [Quick Start](#quick-start)
-  - [Gemfile](#gemfile)
-  - [app/assets/javascripts/application.js](#appassetsjavascriptsapplicationjs)
-  - [app/views/any_erb_template.html.erb](#appviewsany_erb_templatehtmlerb)
-- [How it Works](#how-it-works)
+  - [Quick Start](#quick-start)
+  - [Next Steps](#next-steps)
+    - [Style the placeholder element](#style-the-placeholder-element)
+    - [Add loading content](#add-loading-content)
+    - [Change the Placeholder Tag](#change-the-placeholder-tag)
+  - [How it Works](#how-it-works)
+  - [Similar Tools](#similar-tools)
   - [JavaScript Development](#javascript-development)
 
 <!-- Tocer[finish]: Auto-generated, don't remove. -->
