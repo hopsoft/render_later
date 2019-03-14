@@ -8,7 +8,7 @@
   - [Next Steps](#next-steps)
     - [Style the placeholder element](#style-the-placeholder-element)
     - [Add loading content](#add-loading-content)
-    - [Change the Placeholder Tag](#change-the-placeholder-tag)
+    - [Change the placeholder tag](#change-the-placeholder-tag)
   - [How it Works](#how-it-works)
   - [Similar Tools](#similar-tools)
   - [JavaScript Development](#javascript-development)
@@ -66,7 +66,7 @@ This can be overridden by passing a block to `render_later`
 <% end %>
 ```
 
-### Change the Placeholder Tag
+### Change the placeholder tag
 
 A `span` placeholder tag is used by default.
 This can be overridden by passing the `tag` argument to `render_later`
