@@ -1,3 +1,18 @@
+<!-- Tocer[start]: Auto-generated, don't remove. -->
+
+## Table of Contents
+
+- [RenderLater](#renderlater)
+  - [Improve user perceived performance of your Rails app](#improve-user-perceived-performance-of-your-rails-app)
+- [Quick Start](#quick-start)
+  - [Gemfile](#gemfile)
+  - [app/assets/javascripts/application.js](#appassetsjavascriptsapplicationjs)
+  - [app/views/any_erb_template.html.erb](#appviewsany_erb_templatehtmlerb)
+- [How it Works](#how-it-works)
+  - [JavaScript Development](#javascript-development)
+
+<!-- Tocer[finish]: Auto-generated, don't remove. -->
+
 [![Lines of Code](http://img.shields.io/badge/lines_of_code-31-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/2b24fdbd1ae37a24bedb/maintainability)](https://codeclimate.com/github/hopsoft/render_later/maintainability)
 
@@ -13,18 +28,21 @@ This libary uses [Stimulus](https://stimulusjs.org) to avoid injecting multiple 
 
 # Quick Start
 
+## Gemfile
+
 ```ruby
-# Gemfile
 gem "render_later"
 ```
 
+## app/assets/javascripts/application.js
+
 ```javascript
-// app/assets/javascripts/application.js
 //= require render_later
 ```
 
+## app/views/any_erb_template.html.erb
+
 ```
-<!-- app/views/any_erb_template.html.erb -->
 <%= render_later "/path/to/section" %>
 ```
 
