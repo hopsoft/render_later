@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd ./app/assets/javascripts/src/
+./node_modules/webpack/bin/webpack.js "$@"

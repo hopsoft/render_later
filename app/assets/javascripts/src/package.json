@@ -1,0 +1,12 @@
+{
+  "name": "RenderLater",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "stimulus": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}

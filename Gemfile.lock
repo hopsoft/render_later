@@ -1,0 +1,46 @@
+PATH
+  remote: .
+  specs:
+    render_later (0.1.0)
+      rack
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.0)
+    jaro_winkler (1.5.2)
+    parallel (1.14.0)
+    parser (2.6.0.0)
+      ast (~> 2.4.0)
+    powerpack (0.1.2)
+    psych (3.1.0)
+    rack (2.0.6)
+    rainbow (3.0.0)
+    rake (12.3.2)
+    rubocop (0.65.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.5, != 2.5.1.1)
+      powerpack (~> 0.1)
+      psych (>= 3.1.0)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.4.0)
+    ruby-progressbar (1.10.0)
+    standard (0.0.36)
+      rubocop (>= 0.63)
+    standardrb (1.0.0)
+      standard
+    unicode-display_width (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  rake
+  render_later!
+  standardrb
+
+BUNDLED WITH
+   1.17.3
