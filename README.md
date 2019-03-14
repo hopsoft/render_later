@@ -13,7 +13,7 @@
 
 <!-- Tocer[finish]: Auto-generated, don't remove. -->
 
-[![Lines of Code](http://img.shields.io/badge/lines_of_code-31-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
+[![Lines of Code](http://img.shields.io/badge/lines_of_code-27-brightgreen.svg?style=flat)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a0661a5ab84b7b83b5aa/maintainability)](https://codeclimate.com/github/hopsoft/render_later/maintainability)
 
 # RenderLater
@@ -22,27 +22,58 @@
 
 Render sections of the page asynchronously after initial page load.
 
-# Quick Start
+## Quick Start
 
-## Gemfile
+1. `Gemfile`
 
 ```ruby
 gem "render_later"
 ```
 
-## app/assets/javascripts/application.js
+2. `app/assets/javascripts/application.js`
 
 ```javascript
 //= require render_later
 ```
 
-## app/views/any_erb_template.html.erb
+3. `app/views/any_erb_template.html.erb`
 
-```
-<%= render_later "/path/to/section" %>
+```erb
+<%= render_later "/some/slow/url" %>
 ```
 
-# How it Works
+## Next Steps
+
+### Style the placeholder element
+
+You may wish to style the placeholder.
+This can be done by passing `css` and `style` arguments to `render_later`
+
+```erb
+<%= render_later "/some/slow/url", css: "css-class", style: "color:red" %>
+```
+
+### Add loading content
+
+The text content `Loading...` displays by default.
+This can be overridden by passing a block to `render_later`
+
+```erb
+<%= render_later "/some/slow/url" do %>
+  <%= image_tag "spinner.gif" %>
+<% end %>
+```
+
+### Change the Placeholder Tag
+
+A `span` placeholder tag is used by default.
+This can be overridden by passing the `tag` argument to `render_later`
+
+```erb
+<%= render_later "/some/slow/url", tag: "tr" %>
+```
+
+## How it Works
 
 1. Site visitor requests a page
 1. Server renders a response

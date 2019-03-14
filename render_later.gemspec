@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary     = "Improve user perceived performance of your Rails app"
   gem.description = "Render sections of the page asynchronously after initial page load."
 
-  gem.files       = Dir["lib/**/*.rb", "app/**/*.{erb,rb}", "app/assets/javascripts/render_later.js", "[A-Z]*"]
+  gem.files       = Dir["lib/**/*.rb", "app/**/*.rb", "app/assets/javascripts/render_later.js", "[A-Z]*"]
   gem.test_files  = Dir["test/**/*.rb"]
 
   gem.add_dependency "rack"
